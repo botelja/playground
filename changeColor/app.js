@@ -3,5 +3,5 @@ const colors = ["AliceBlue","AntiqueWhite","Aqua","Aquamarine","Azure","Beige","
 document.querySelector('button').addEventListener('click', changeColor);
 
 function changeColor() {
-    document.querySelector('body').style.backgroundColor = colors[Math.floor(Math.random()*colors.length)];
+    document.querySelector('body').style.setProperty('--color', colors[Math.floor(Math.random()*colors.length)]);
 }
